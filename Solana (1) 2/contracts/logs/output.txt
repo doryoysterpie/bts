@@ -1,0 +1,42 @@
+    Finished `release` profile [optimized] target(s) in 0.78s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.31s
+     Running unittests src/lib.rs (/69fd038ebe9241901c1cd157/contracts/target/debug/deps/workspace-51ba4ba41e55366b)
+
+Found a 'test' script in the Anchor.toml. Running it as a test suite!
+
+Running test suite: "/69fd038ebe9241901c1cd157/contracts/Anchor.toml"
+
+yarn run v1.22.22
+$ /69fd038ebe9241901c1cd157/contracts/node_modules/.bin/ts-mocha -p ./tsconfig.json -t 1000000 'tests/**/*.ts'
+
+
+  workspace
+    ✔ Initialize Config (406ms)
+    ✔ Init Profile for user (403ms)
+    ✔ First check-in sets streak to 1 (405ms)
+    ✔ Rejects duplicate check-in within 24h
+    ✔ Mint pet with active streak (379ms)
+    ✔ Rejects minting pet when one already exists
+    ✔ Rejects regenerate when pet is alive
+    ✔ Add tip of 0.05 SOL (391ms)
+    ✔ Rejects tip below minimum (0.01 SOL) (77ms)
+    ✔ Withdraw 100% during first-time milestone window (352ms)
+    ✔ Rejects withdrawal when no tips locked
+    ✔ Mint milestone for day 1 (367ms)
+    ✔ Rejects minting same milestone twice
+    ✔ Rejects invalid milestone type
+    ✔ Rejects milestone when streak is insufficient (47ms)
+    ✔ Init profile for user2 (312ms)
+    ✔ Rejects mint pet without active streak
+    ✔ Staggered withdrawal when no milestone window (2050ms)
+    ✔ Add multiple tips accumulate correctly (834ms)
+    ✔ User2 can mint pet after check-in (404ms)
+    ✔ Add exact minimum tip (0.01 SOL) (402ms)
+    ✔ Rejects re-initializing config
+    ✔ Rejects re-initializing profile
+    ✔ Mint milestone using longest_streak (not current streak)
+
+
+  24 passing (8s)
+
+Done in 9.50s.
